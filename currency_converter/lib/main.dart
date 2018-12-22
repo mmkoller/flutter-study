@@ -51,7 +51,6 @@ class _HomeState extends State<Home> {
     dolarController.text = ((euro * this.euro) / this.dolar).toStringAsFixed(2);
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,13 +79,12 @@ class _HomeState extends State<Home> {
                       textAlign: TextAlign.center),
                 );
               } else {
-
                 dolar = snapshot.data["results"]["currencies"]["USD"]["buy"];
                 euro = snapshot.data["results"]["currencies"]["EUR"]["buy"];
 
                 realController.text = "1";
-                dolarController.text = (1/dolar).toStringAsFixed(2);
-                euroController.text = (1/euro).toStringAsFixed(2);
+                dolarController.text = (1 / dolar).toStringAsFixed(2);
+                euroController.text = (1 / euro).toStringAsFixed(2);
 
                 return SingleChildScrollView(
                   padding: EdgeInsets.all(15.0),
