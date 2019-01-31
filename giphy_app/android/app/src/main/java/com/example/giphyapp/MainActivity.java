@@ -1,4 +1,4 @@
-package com.example.todoapp;
+package com.example.giphyapp;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

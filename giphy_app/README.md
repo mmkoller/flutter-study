@@ -1,4 +1,4 @@
-# todo_app
+# giphy_app
 
 A new Flutter project.
 
